@@ -17,8 +17,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const appId = process.env.AGORA_APP_ID;
-    const appCert = process.env.AGORA_APP_CERTIFICATE;
+    const appId = "ffdadeddcd094fada3524868cf54efd7";
+    const appCert = "32c6a1f87f3c48a58c7d1eccee2f8eb9";
 
     if (!appId || !appCert) {
       return res.status(500).json({ error: 'Agora credentials not configured' });
