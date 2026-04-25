@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="White Mirror Terms & Conditions — the rules of engagement, written to create clarity and mutual respect." />
+  <meta name="keywords" content="terms and conditions, terms of service, White Mirror, journaling" />
+  <meta property="og:title" content="Terms & Conditions — White Mirror" />
+  <meta property="og:description" content="Clear terms, written to be read. Not just to comply." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.whitemirrorjournal.com/terms.html" />
+  <title>Terms &amp; Conditions — White Mirror</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/app_icon.png" />
+
+  <style>
+    /* ── Terms page hero ── */
+    .pp-hero {
+      padding-top: calc(var(--nav-height) + 6rem);
+      padding-bottom: 6rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pp-hero-title {
+      font-family: var(--font-cormorant);
+      font-size: clamp(2.75rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    .pp-hero-meta {
+      font-family: var(--font-lora);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--secondary);
+    }
+
+    /* ── Content area ── */
+    .pp-content {
+      padding: 8rem 0 12rem;
+    }
+
+    .pp-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── Introduction ── */
+    .pp-intro {
+      font-family: var(--font-lora);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--secondary);
+      line-height: 1.8;
+      margin-bottom: 6rem;
+      padding-bottom: 6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Sections ── */
+    .pp-section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pp-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .pp-section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .pp-num {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: var(--quaternary);
+      text-transform: uppercase;
+      flex-shrink: 0;
+      padding-top: 0.2rem;
+    }
+
+    .pp-section-title {
+      font-family: var(--font-cormorant);
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .pp-body {
+      font-family: var(--font-dm);
+      font-size: 16px;
+      color: var(--secondary);
+      line-height: 1.8;
+    }
+
+    .pp-body + .pp-body {
+      margin-top: 1.25rem;
+    }
+
+    .pp-body strong {
+      color: var(--graphite);
+      font-weight: 500;
+    }
+
+    /* Sub-label */
+    .pp-sublabel {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--tertiary);
+      font-family: var(--font-dm);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .pp-sublabel:first-child {
+      margin-top: 0;
+    }
+
+    /* Lists */
+    .pp-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-family: var(--font-dm);
+    }
+
+    .pp-list li {
+      font-size: 16px;
+      color: var(--secondary);
+      line-height: 1.7;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .pp-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--quaternary);
+      font-size: 14px;
+    }
+
+    /* Definition list */
+    .pp-def {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pp-def-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 1rem;
+      font-size: 15px;
+      line-height: 1.7;
+      font-family: var(--font-dm);
+    }
+
+    .pp-def-term {
+      font-weight: 500;
+      color: var(--graphite);
+      padding-top: 0.05rem;
+    }
+
+    .pp-def-desc {
+      color: var(--secondary);
+    }
+
+    /* Closing note */
+    .pp-closing {
+      margin-top: 6rem;
+      padding-top: 4rem;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-lora);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--tertiary);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    /* Contact block */
+    .pp-contact-block {
+      margin-top: 1.5rem;
+      padding: 2rem 2.5rem;
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .pp-contact-block a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.3s ease;
+    }
+
+    .pp-contact-block a:hover {
+      border-color: var(--ink);
+    }
+
+    /* Inline link style */
+    .pp-link {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.3s ease;
+    }
+
+    .pp-link:hover {
+      border-color: var(--ink);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .pp-def-item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+
+      .pp-def-term {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════ NAV ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo">WHITE MIRROR</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#method" class="nav-link">The Method</a>
+        <a href="index.html#journal" class="nav-link">The Journal</a>
+        <a href="index.html#app" class="nav-link">The App</a>
+        <a href="index.html#phases" class="nav-link">90 Days</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="https://app.whitemirrorjournal.com" class="nav-cta" id="nav-cta" target="_blank" rel="noopener">Sign
+        In</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html#method" class="mobile-link">The Method</a>
+      <a href="index.html#journal" class="mobile-link">The Journal</a>
+      <a href="index.html#app" class="mobile-link">The App</a>
+      <a href="index.html#phases" class="mobile-link">90 Days</a>
+      <a href="index.html#contact" class="mobile-link">Contact</a>
+      <a href="https://app.whitemirrorjournal.com" class="mobile-cta" target="_blank" rel="noopener">Open the App</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <header class="pp-hero">
+    <div class="container">
+      <span class="eyebrow">LEGAL</span>
+      <h1 class="pp-hero-title">Terms &amp; Conditions</h1>
+      <p class="pp-hero-meta">Effective January 1, 2025 &nbsp;·&nbsp; Last updated January 1, 2025</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════ CONTENT ═══════════════════════════════════════ -->
+  <main class="pp-content">
+    <div class="pp-inner">
+
+      <!-- Introduction -->
+      <p class="pp-intro">
+        By accessing or using the White Mirror website, purchasing our products, or engaging with any of our
+        Services, you agree to be bound by these Terms &amp; Conditions. Please read them carefully. If you do
+        not agree, please do not use our Services.
+      </p>
+
+      <!-- 01 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">01</span>
+          <h2 class="pp-section-title">Definitions</h2>
+        </div>
+        <ul class="pp-list">
+          <li><strong>"White Mirror"</strong>, <strong>"we"</strong>, <strong>"our"</strong>, or <strong>"us"</strong> refers to White Mirror Journal and its operators.</li>
+          <li><strong>"You"</strong> or <strong>"user"</strong> refers to any individual accessing or using our Services.</li>
+          <li><strong>"Services"</strong> refers to our website, the White Mirror Journal (physical and digital), any associated mobile application, and all related products and content.</li>
+          <li><strong>"Products"</strong> refers to physical journals, digital downloads, subscriptions, and any other items available for purchase.</li>
+          <li><strong>"Content"</strong> refers to all text, images, graphics, design, copy, and other material published by White Mirror.</li>
+        </ul>
+      </div>
+
+      <!-- 02 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">02</span>
+          <h2 class="pp-section-title">Acceptance of Terms</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">By using our Services, you confirm that:</p>
+        <ul class="pp-list">
+          <li>You are at least 16 years of age</li>
+          <li>You have the legal capacity to enter into a binding agreement</li>
+          <li>You are not prohibited from using our Services under any applicable law</li>
+          <li>All information you provide to us is accurate and complete</li>
+        </ul>
+        <p class="pp-body" style="margin-top: 1.5rem;">
+          If you are using our Services on behalf of an organisation, you represent that you have authority to
+          bind that organisation to these Terms.
+        </p>
+      </div>
+
+      <!-- 03 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">03</span>
+          <h2 class="pp-section-title">Products &amp; Orders</h2>
+        </div>
+
+        <span class="pp-sublabel">Product descriptions</span>
+        <p class="pp-body">
+          We make every effort to describe our products accurately. However, we do not warrant that product
+          descriptions, images, or other content are error-free, complete, or current. Colors and textures of
+          physical products may vary slightly from what appears on screen.
+        </p>
+
+        <span class="pp-sublabel">Pricing</span>
+        <p class="pp-body">
+          All prices are displayed in the applicable currency and are subject to change without notice. Prices
+          do not include applicable taxes or shipping fees, which will be calculated and displayed at checkout.
+        </p>
+
+        <span class="pp-sublabel">Order acceptance</span>
+        <p class="pp-body">
+          Placing an order constitutes an offer to purchase. We reserve the right to accept or decline any order
+          at our discretion. An order is confirmed only when you receive written confirmation from us. We may
+          cancel or refuse orders in cases of pricing errors, suspected fraud, or stock unavailability.
+        </p>
+
+        <span class="pp-sublabel">Payment</span>
+        <p class="pp-body">
+          We accept major credit and debit cards and other payment methods as displayed at checkout. Payment is
+          processed securely through our third-party payment provider. We do not store your full payment card details.
+        </p>
+      </div>
+
+      <!-- 04 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">04</span>
+          <h2 class="pp-section-title">Shipping &amp; Delivery</h2>
+        </div>
+
+        <span class="pp-sublabel">Shipping times</span>
+        <p class="pp-body">
+          Estimated delivery times are provided at checkout and are indicative only. We are not liable for
+          delays caused by shipping carriers, customs, or circumstances beyond our control.
+        </p>
+
+        <span class="pp-sublabel">International orders</span>
+        <p class="pp-body">
+          For orders shipped outside our home country, you are responsible for any import duties, customs fees,
+          or taxes levied by your country. These charges are not included in the purchase price or shipping fee.
+        </p>
+
+        <span class="pp-sublabel">Risk of loss</span>
+        <p class="pp-body">
+          Risk of loss and title for products purchased pass to you upon our delivery to the carrier. We are not
+          responsible for lost or damaged packages once handed to the carrier, but we will do our best to assist
+          you in resolving any issues.
+        </p>
+      </div>
+
+      <!-- 05 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">05</span>
+          <h2 class="pp-section-title">Returns &amp; Refunds</h2>
+        </div>
+
+        <span class="pp-sublabel">Physical products</span>
+        <p class="pp-body">
+          If your order arrives damaged or defective, please contact us within 14 days of receipt at
+          <a href="mailto:hello@whitemirrorjournal.com" class="pp-link">hello@whitemirrorjournal.com</a>
+          with your order number and a description of the issue. We will offer a replacement or refund at our
+          discretion.
+        </p>
+        <p class="pp-body">
+          We do not accept returns on undamaged physical journals due to the personal nature of the product,
+          unless required by applicable consumer protection law in your jurisdiction.
+        </p>
+
+        <span class="pp-sublabel">Digital products</span>
+        <p class="pp-body">
+          Due to the nature of digital goods, all sales of digital downloads are final and non-refundable once
+          the product has been accessed or downloaded, unless the file is defective or inaccessible.
+        </p>
+
+        <span class="pp-sublabel">Subscriptions</span>
+        <p class="pp-body">
+          If applicable, subscription cancellations take effect at the end of the current billing period. No
+          partial refunds are issued for unused time within a billing period.
+        </p>
+      </div>
+
+      <!-- 06 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">06</span>
+          <h2 class="pp-section-title">Intellectual Property</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">
+          All Content on our website and within our products — including but not limited to text, design,
+          photography, illustrations, prompts, copy, and the White Mirror name and logo — is the exclusive
+          intellectual property of White Mirror and is protected by copyright, trademark, and other applicable
+          laws.
+        </p>
+        <p class="pp-body" style="margin-bottom: 1rem;"><strong>You may not:</strong></p>
+        <ul class="pp-list" style="margin-bottom: 1.5rem;">
+          <li>Reproduce, copy, or redistribute any Content without our prior written permission</li>
+          <li>Use our name, logo, or branding in any way that implies endorsement or affiliation</li>
+          <li>Scrape, crawl, or systematically extract content from our website</li>
+          <li>Use our Content for commercial purposes without a license</li>
+        </ul>
+        <p class="pp-body">
+          You may share links to our website and reference our products for personal, non-commercial purposes
+          with appropriate attribution.
+        </p>
+      </div>
+
+      <!-- 07 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">07</span>
+          <h2 class="pp-section-title">User-Submitted Content</h2>
+        </div>
+        <p class="pp-body">
+          If you submit reviews, testimonials, feedback, or any other content to us, you grant White Mirror a
+          non-exclusive, royalty-free, worldwide license to use, reproduce, publish, and display that content
+          in connection with our Services and marketing, with or without attribution, unless you explicitly
+          request otherwise.
+        </p>
+        <p class="pp-body">
+          You represent that any content you submit is your own original work, does not infringe any
+          third-party rights, and does not contain defamatory, harmful, or unlawful material.
+        </p>
+      </div>
+
+      <!-- 08 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">08</span>
+          <h2 class="pp-section-title">Digital Services &amp; App</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">If and when we launch a companion mobile application or digital journaling platform:</p>
+        <ul class="pp-list">
+          <li>Additional terms specific to the app will be provided at the time of launch</li>
+          <li>Access to digital features may require account creation and agreement to supplemental terms</li>
+          <li>We reserve the right to modify, suspend, or discontinue digital features at any time with reasonable notice</li>
+        </ul>
+      </div>
+
+      <!-- 09 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">09</span>
+          <h2 class="pp-section-title">Prohibited Use</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">You agree not to use our Services to:</p>
+        <ul class="pp-list">
+          <li>Violate any applicable law or regulation</li>
+          <li>Infringe the intellectual property rights of White Mirror or any third party</li>
+          <li>Transmit spam, unsolicited messages, or harmful code</li>
+          <li>Attempt to gain unauthorized access to our systems or data</li>
+          <li>Engage in any conduct that disrupts, damages, or impairs the functioning of our website</li>
+          <li>Impersonate White Mirror or any of its representatives</li>
+          <li>Collect or harvest any personal data from our website without permission</li>
+        </ul>
+      </div>
+
+      <!-- 10 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">10</span>
+          <h2 class="pp-section-title">Disclaimer of Warranties</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">
+          Our Services and Products are provided "as is" and "as available" without warranties of any kind,
+          either express or implied, including but not limited to:
+        </p>
+        <ul class="pp-list" style="margin-bottom: 1.5rem;">
+          <li>Fitness for a particular purpose</li>
+          <li>Uninterrupted or error-free availability of the website</li>
+          <li>The accuracy or completeness of any content</li>
+        </ul>
+        <p class="pp-body">
+          White Mirror is a wellness and self-reflection brand. Our products are designed to support personal
+          growth and emotional wellbeing. They are not a substitute for professional mental health care,
+          therapy, or medical advice. If you are experiencing a mental health crisis, please seek appropriate
+          professional support.
+        </p>
+      </div>
+
+      <!-- 11 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">11</span>
+          <h2 class="pp-section-title">Limitation of Liability</h2>
+        </div>
+        <p class="pp-body" style="margin-bottom: 1.5rem;">
+          To the fullest extent permitted by applicable law, White Mirror shall not be liable for any indirect,
+          incidental, special, consequential, or punitive damages arising from:
+        </p>
+        <ul class="pp-list" style="margin-bottom: 1.5rem;">
+          <li>Your use of or inability to use our Services</li>
+          <li>Any errors or omissions in our content</li>
+          <li>Unauthorized access to or alteration of your data</li>
+          <li>Any other matter relating to our Services</li>
+        </ul>
+        <p class="pp-body">
+          Our total liability for any claim arising from these Terms shall not exceed the amount you paid to us
+          in the 30 days preceding the claim.
+        </p>
+      </div>
+
+      <!-- 12 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">12</span>
+          <h2 class="pp-section-title">Indemnification</h2>
+        </div>
+        <p class="pp-body">
+          You agree to indemnify, defend, and hold harmless White Mirror and its affiliates, employees, and
+          agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of
+          our Services, your violation of these Terms, or your infringement of any third-party rights.
+        </p>
+      </div>
+
+      <!-- 13 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">13</span>
+          <h2 class="pp-section-title">Third-Party Links &amp; Services</h2>
+        </div>
+        <p class="pp-body">
+          Our website may contain links to third-party websites or integrate third-party services (e.g. payment
+          processors, social platforms). These are provided for convenience only. We do not endorse, control,
+          or take responsibility for the content or practices of any third-party services. Your use of
+          third-party services is governed by their own terms and privacy policies.
+        </p>
+      </div>
+
+      <!-- 14 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">14</span>
+          <h2 class="pp-section-title">Governing Law &amp; Disputes</h2>
+        </div>
+        <p class="pp-body">
+          These Terms shall be governed by and construed in accordance with applicable law. Any disputes
+          arising from these Terms or your use of our Services shall first be attempted to be resolved through
+          good-faith negotiation by contacting us at
+          <a href="mailto:hello@whitemirrorjournal.com" class="pp-link">hello@whitemirrorjournal.com</a>.
+        </p>
+        <p class="pp-body">
+          If a dispute cannot be resolved informally, it shall be subject to the exclusive jurisdiction of the
+          courts in the applicable territory, unless otherwise required by consumer protection law in your
+          jurisdiction.
+        </p>
+      </div>
+
+      <!-- 15 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">15</span>
+          <h2 class="pp-section-title">Changes to These Terms</h2>
+        </div>
+        <p class="pp-body">
+          We may update these Terms from time to time to reflect changes in our Services, legal requirements,
+          or business practices. We will notify you of material changes by updating the "Last Updated" date at
+          the top of this page and, where appropriate, by email. Your continued use of our Services after
+          changes are posted constitutes acceptance of the revised Terms.
+        </p>
+      </div>
+
+      <!-- 16 -->
+      <div class="pp-section">
+        <div class="pp-section-head">
+          <span class="pp-num">16</span>
+          <h2 class="pp-section-title">Contact Us</h2>
+        </div>
+        <p class="pp-body">
+          If you have any questions about these Terms &amp; Conditions, please reach out.
+        </p>
+        <div class="pp-contact-block">
+          <p class="pp-body">
+            <strong>Email:</strong>&nbsp;
+            <a href="mailto:hello@whitemirrorjournal.com">hello@whitemirrorjournal.com</a>
+          </p>
+          <p class="pp-body" style="margin-top: 0.5rem;">
+            We aim to respond to all inquiries within 5 business days.
+          </p>
+        </div>
+      </div>
+
+      <!-- Closing note -->
+      <p class="pp-closing">
+        These terms exist to create clarity and mutual respect — not barriers.<br />
+        If something is unclear, please ask. We're here.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">WHITE MIRROR</span>
+        <p class="footer-tagline">A guided journal system for people who are done<br />running from themselves.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-label">PRACTICE</span>
+          <a href="index.html#method" class="footer-link">The M.I.R.R.O.R. Method</a>
+          <a href="index.html#phases" class="footer-link">The 90 Days</a>
+          <a href="index.html#journal" class="footer-link">The Journal</a>
+          <a href="index.html#contact" class="footer-link">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">APP</span>
+          <a href="https://app.whitemirrorjournal.com" class="footer-link" target="_blank" rel="noopener">Open the App</a>
+          <a href="https://app.whitemirrorjournal.com/signup" class="footer-link" target="_blank" rel="noopener">Sign Up</a>
+          <a href="https://app.whitemirrorjournal.com/login" class="footer-link" target="_blank" rel="noopener">Log In</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 White Mirror. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html" class="footer-legal-link">Privacy</a>
+        <a href="terms.html" class="footer-legal-link">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+[    1855ms] [LOG] 🚀 Starting White Mirror... @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1856ms] [LOG] 📦 LocalStorage: Initializing Hive... @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1858ms] [LOG] ✅ LocalStorage: Hive initialized. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1859ms] [LOG] 📦 LocalStorage: Opening box "entries_box"... @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1864ms] [LOG] Got object store box in database entries_box. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1866ms] [LOG] ✅ LocalStorage: Box "entries_box" opened. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1866ms] [LOG] 📦 LocalStorage: Opening box "sync_queue_box"... @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1867ms] [LOG] Got object store box in database sync_queue_box. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1867ms] [LOG] ✅ LocalStorage: Box "sync_queue_box" opened. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1868ms] [LOG] 📦 LocalStorage: Opening box "settings_box"... @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1868ms] [LOG] Got object store box in database settings_box. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1869ms] [LOG] ✅ LocalStorage: Box "settings_box" opened. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1869ms] [LOG] ✅ LocalStorage: All boxes ready. @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1871ms] [LOG] ❌ FATAL ERROR DURING STARTUP: MissingPluginException(No implementation found for method configure on channel com.ryanheise.audio_service.client.methods) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1871ms] [LOG]  @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1871ms] [LOG]     at Object.e (https://app.whitemirrorjournal.com/main.dart.js:4115:20) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1871ms] [LOG]     at https://app.whitemirrorjournal.com/main.dart.js:91739:15 @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at bfq.a (https://app.whitemirrorjournal.com/main.dart.js:5529:63) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at bfq.$2 (https://app.whitemirrorjournal.com/main.dart.js:51078:14) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at bea.$1 (https://app.whitemirrorjournal.com/main.dart.js:51072:21) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at agP.ql (https://app.whitemirrorjournal.com/main.dart.js:52399:33) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at b01.$0 (https://app.whitemirrorjournal.com/main.dart.js:51575:11) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at Object.Bp (https://app.whitemirrorjournal.com/main.dart.js:5677:40) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at aa.qT (https://app.whitemirrorjournal.com/main.dart.js:51481:3) @ https://app.whitemirrorjournal.com/main.dart.js:38198
+[    1872ms] [LOG]     at b_U.$0 (https://app.whitemirrorjournal.com/main.dart.js:51538:13) @ https://app.whitemirrorjournal.com/main.dart.js:38198
