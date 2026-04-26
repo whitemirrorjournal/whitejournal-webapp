@@ -1,5 +1,5 @@
 .DS_Store
-.remember/
 .claude/
-.agents/
-.superpowers/
+.playwright-mcp/
+.remember/
+.last_build_id
