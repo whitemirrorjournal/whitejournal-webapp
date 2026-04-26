@@ -1,270 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="White Mirror — The most important conversation is the one you postpone with yourself. 90 days. Six practices. One transformation." />
-  <meta property="og:title" content="White Mirror" />
-  <meta property="og:description" content="The most important conversation is the one you postpone with yourself." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.whitemirrorjournal.com" />
-  <title>White Mirror</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="White Mirror — 90 days of radical self-awareness. Your digital companion for the guided journal system. Available at whitemirrorjournal.com">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="White Mirror Journal">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>SEE YOURSELF — White Mirror Journal</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- 🔄 GitHub Pages SPA Hack Handler -->
+  <script type="text/javascript">
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, l.pathname.length - l.search.length) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
 </head>
-
 <body>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">WHITE MIRROR</a>
-      <div class="nav-links">
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#method"   class="nav-link">Method</a>
-        <a href="#phases"   class="nav-link">90 Days</a>
-        <a href="#contact"  class="nav-link">Contact</a>
-      </div>
-      <a href="https://app.whitemirrorjournal.com" class="nav-cta" target="_blank" rel="noopener">Sign In</a>
-      <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#features" class="mobile-link">Features</a>
-      <a href="#method"   class="mobile-link">Method</a>
-      <a href="#phases"   class="mobile-link">90 Days</a>
-      <a href="#contact"  class="mobile-link">Contact</a>
-      <a href="https://app.whitemirrorjournal.com" class="mobile-cta" target="_blank" rel="noopener">Open App</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <p class="hero-kicker">White Mirror Journal</p>
-      <h1 class="hero-headline">
-        The most important conversation<br />
-        is the one <em>you postpone<br />with yourself.</em>
-      </h1>
-      <p class="hero-sub">
-        90 days. Six practices. One mirror that never lies.
-      </p>
-      <div class="hero-actions">
-        <a href="https://app.whitemirrorjournal.com/signup" class="btn-primary" target="_blank" rel="noopener">Begin now</a>
-        <a href="#features" class="btn-ghost">See what's inside</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- FEATURES — 6 app tabs, exact match -->
-  <section class="section" id="features">
-    <div class="container">
-      <div class="features-header">
-        <p class="section-label">The App</p>
-        <h2 class="section-title">Six tabs.<br />One complete practice.</h2>
-        <p class="section-sub">Every screen built for one thing — going deeper into yourself.</p>
-      </div>
-
-      <div class="features-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon">☀</div>
-          <p class="feature-tab">Today</p>
-          <h3 class="feature-title">Your day, distilled.</h3>
-          <p class="feature-desc">One prompt. Six moods. Space to write. Every entry encrypted end-to-end — yours alone. Scan your physical journal with your camera and it comes in too.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">◈</div>
-          <p class="feature-tab">Insights</p>
-          <h3 class="feature-title">Patterns you can't unsee.</h3>
-          <p class="feature-desc">AI reads across your entries and surfaces what's shifting. Not summaries — genuine signal. Gets sharper as your practice deepens.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">♫</div>
-          <p class="feature-tab">Music</p>
-          <h3 class="feature-title">Sound that works.</h3>
-          <p class="feature-desc">Curated channels for focus, flow, and stillness. Plays through your entire session — including while you write or breathe.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">○</div>
-          <p class="feature-tab">Meditate</p>
-          <h3 class="feature-title">Breathe on purpose.</h3>
-          <p class="feature-desc">Guided, silent, or with music. Three durations. One animated circle. 4-4-6 box breathing — the method behind the calm.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">◉</div>
-          <p class="feature-tab">Circles</p>
-          <h3 class="feature-title">Practice together.</h3>
-          <p class="feature-desc">Live sessions with people doing the same work. Create a Circle or join one. No audience. Shared accountability — nothing else.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">◎</div>
-          <p class="feature-tab">You</p>
-          <h3 class="feature-title">The full picture.</h3>
-          <p class="feature-desc">Your streak. Your arc. Your 90-day progress. Everything in one place, so the momentum is always visible.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- METHOD -->
-  <section class="section method-section" id="method">
-    <div class="container">
-      <p class="section-label">The Method</p>
-      <h2 class="section-title">The M.I.R.R.O.R. Framework.</h2>
-      <p class="section-sub">Six dimensions of self-inquiry. Woven into every day of your 90.</p>
-
-      <div class="mirror-grid">
-        <div class="mirror-item">
-          <div class="mirror-letter">M</div>
-          <div class="mirror-word">Mindfulness</div>
-          <p class="mirror-desc">Present before the noise begins. Every session starts here.</p>
-        </div>
-        <div class="mirror-item">
-          <div class="mirror-letter">I</div>
-          <div class="mirror-word">Inquiry</div>
-          <p class="mirror-desc">The questions that make you stop. Those are the only ones that count.</p>
-        </div>
-        <div class="mirror-item">
-          <div class="mirror-letter">R</div>
-          <div class="mirror-word">Reflection</div>
-          <p class="mirror-desc">Looking back without flinching. Patterns only emerge when you look.</p>
-        </div>
-        <div class="mirror-item">
-          <div class="mirror-letter">R</div>
-          <div class="mirror-word">Responsibility</div>
-          <p class="mirror-desc">Own your choices. No exceptions, no audience, no excuses.</p>
-        </div>
-        <div class="mirror-item">
-          <div class="mirror-letter">O</div>
-          <div class="mirror-word">Openness</div>
-          <p class="mirror-desc">Honesty when honesty is the harder path. The practice only works if you do.</p>
-        </div>
-        <div class="mirror-item">
-          <div class="mirror-letter">R</div>
-          <div class="mirror-word">Renewal</div>
-          <p class="mirror-desc">End each day with intention. Not perfection — direction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- 90 DAYS -->
-  <section class="section" id="phases">
-    <div class="container">
-      <p class="section-label">The 90 Days</p>
-      <h2 class="section-title">Three phases.<br />One transformation.</h2>
-      <p class="section-sub">Ninety days isn't arbitrary. It's how long real change actually takes.</p>
-
-      <div class="phases-grid">
-        <div class="phase-card">
-          <div class="phase-num">I</div>
-          <p class="phase-days-label">Days 1 – 30</p>
-          <h3 class="phase-title">The Reckoning</h3>
-          <p class="phase-desc">You look at what you've been avoiding. Not with judgment — with honesty. The story you've been telling yourself meets the truth.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">II</div>
-          <p class="phase-days-label">Days 31 – 60</p>
-          <h3 class="phase-title">The Work</h3>
-          <p class="phase-desc">Awareness without action is observation. This is where the patterns get named, and the repeating finally stops.</p>
-        </div>
-        <div class="phase-card">
-          <div class="phase-num">III</div>
-          <p class="phase-days-label">Days 61 – 90</p>
-          <h3 class="phase-title">The Integration</h3>
-          <p class="phase-desc">Not a conclusion — a beginning. You define who you're becoming and build the practice you carry forward.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <div class="container">
-      <p class="section-label" style="color: rgba(255,255,255,0.4);">Start Today</p>
-      <h2 class="section-title">Ninety days from now,<br /><em>you'll know yourself.</em></h2>
-      <p class="section-sub" style="color: rgba(255,255,255,0.5); margin-top: 1.25rem;">
-        The app is free to start. No journal required — though one helps.
-      </p>
-      <a href="https://app.whitemirrorjournal.com/signup" class="btn-primary" target="_blank" rel="noopener">Begin now</a>
-      <p class="cta-band-sub">Available on web · iOS · Android</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">We're here.</h2>
-
-      <div class="contact-grid">
-        <div class="contact-block">
-          <div class="contact-block-label">General</div>
-          <h3 class="contact-block-title">Questions or feedback?</h3>
-          <p class="contact-block-desc">We read everything. Usually back within two business days.</p>
-          <a href="mailto:hello@whitemirrorjournal.com" class="contact-link">hello@whitemirrorjournal.com</a>
-        </div>
-        <div class="contact-block">
-          <div class="contact-block-label">Support</div>
-          <h3 class="contact-block-title">Account or app issue?</h3>
-          <p class="contact-block-desc">Billing, access, or anything broken — reach out directly.</p>
-          <a href="mailto:support@whitemirrorjournal.com" class="contact-link">support@whitemirrorjournal.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">WHITE MIRROR</span>
-        <p class="footer-tagline">A guided journal system for people who are done<br />running from themselves.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <span class="footer-col-label">Practice</span>
-          <a href="#method"   class="footer-link">The M.I.R.R.O.R. Method</a>
-          <a href="#phases"   class="footer-link">The 90 Days</a>
-          <a href="#features" class="footer-link">The App</a>
-          <a href="#contact"  class="footer-link">Contact</a>
-        </div>
-        <div class="footer-col">
-          <span class="footer-col-label">App</span>
-          <a href="https://app.whitemirrorjournal.com"         class="footer-link" target="_blank" rel="noopener">Open the App</a>
-          <a href="https://app.whitemirrorjournal.com/signup"  class="footer-link" target="_blank" rel="noopener">Sign Up</a>
-          <a href="https://app.whitemirrorjournal.com/login"   class="footer-link" target="_blank" rel="noopener">Log In</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">Copyright © 2026 White Mirror. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
-        <a href="terms.html"   class="footer-legal-link">Terms of Use</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
-
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
